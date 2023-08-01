@@ -1,0 +1,13 @@
+{
+  "name": "sv-log",
+  "version": "1.0.0",
+  "dependencies": {
+    "axios": "latest",
+    "firebase": "latest",
+    "public-ip": "latest"
+  },
+  "devDependencies": {
+    "webpack": "latest",
+    "webpack-cli": "latest"
+  }
+}

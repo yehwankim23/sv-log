@@ -1,0 +1,175 @@
+@font-face {
+  font-family: "NanumSquareNeo";
+  src: url(https://hangeul.pstatic.net/hangeul_static/webfont/NanumSquareNeo/NanumSquareNeoTTF-bRg.eot);
+  src: url(https://hangeul.pstatic.net/hangeul_static/webfont/NanumSquareNeo/NanumSquareNeoTTF-bRg.eot?#iefix)
+      format("embedded-opentype"),
+    url(https://hangeul.pstatic.net/hangeul_static/webfont/NanumSquareNeo/NanumSquareNeoTTF-bRg.woff)
+      format("woff"),
+    url(https://hangeul.pstatic.net/hangeul_static/webfont/NanumSquareNeo/NanumSquareNeoTTF-bRg.ttf)
+      format("truetype");
+}
+
+body {
+  margin: 0;
+  background-color: lightgray;
+  font-family: "NanumSquareNeo", sans-serif;
+  font-size: 5vmin;
+  color: black;
+  touch-action: manipulation;
+}
+
+div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+a {
+  color: black;
+  text-underline-offset: 1vmin;
+}
+
+input,
+button,
+select {
+  border: none;
+  border-radius: 2vmin;
+  padding: 0 5vmin;
+  font-family: "NanumSquareNeo", sans-serif;
+  font-size: 5vmin;
+}
+
+button {
+  cursor: pointer;
+}
+
+button:disabled {
+  cursor: not-allowed;
+}
+
+select {
+  text-align-last: center;
+}
+
+.m-a {
+  margin: auto;
+}
+
+.mt-5 {
+  margin-top: 5vmin;
+}
+
+.mt-10 {
+  margin-top: 10vmin;
+}
+
+.b-05-lightgray {
+  border: 0.5vmin solid lightgray;
+}
+
+.bt-05-lightgray {
+  border-top: 0.5vmin solid lightgray;
+}
+
+.br-05-lightgray {
+  border-right: 0.5vmin solid lightgray;
+}
+
+.bb-05-lightgray {
+  border-bottom: 0.5vmin solid lightgray;
+}
+
+.bl-05-lightgray {
+  border-left: 0.5vmin solid lightgray;
+}
+
+.br-15 {
+  border-radius: 15vmin;
+}
+
+.pt-10 {
+  padding-top: 10vmin;
+}
+
+.pb-10 {
+  padding-bottom: 10vmin;
+}
+
+.w-20 {
+  width: 20vmin;
+}
+
+.w-30 {
+  width: 30vmin;
+}
+
+.w-40 {
+  width: 40vmin;
+}
+
+.w-69 {
+  width: 69vmin;
+}
+
+.w-80 {
+  width: 80vmin;
+}
+
+.w-100 {
+  width: 100vmin;
+}
+
+.h-10 {
+  height: 10vmin;
+}
+
+.h-30 {
+  height: 30vmin;
+}
+
+.h-40 {
+  height: 40vmin;
+}
+
+.mh-100 {
+  min-height: 100vh;
+}
+
+.bc-dodgerblue {
+  background-color: dodgerblue;
+  color: white;
+}
+
+.bc-lightgray {
+  background-color: lightgray;
+  color: black;
+}
+
+.bc-white {
+  background-color: white;
+}
+
+.ox-a {
+  overflow-x: auto;
+}
+
+.fd-r {
+  flex-direction: row;
+}
+
+.jc-fs {
+  justify-content: flex-start;
+}
+
+.ai-fs {
+  align-items: flex-start;
+}
+
+.fs-7 {
+  font-size: 7vmin;
+}
+
+.color-firebrick {
+  color: firebrick;
+}
