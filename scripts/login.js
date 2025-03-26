@@ -1,15 +1,15 @@
 import { initializeApp } from "firebase/app";
+import axios from "axios";
 import { getAnalytics } from "firebase/analytics";
 
-const FIREBASE_APP = initializeApp({
-  apiKey: "AIzaSyBACaW36r_9CeP03lrjog6-TFuhhUqMyJc",
-  authDomain: "sv-log.firebaseapp.com",
-  projectId: "sv-log",
-  storageBucket: "sv-log.appspot.com",
-  messagingSenderId: "315201647302",
-  appId: "1:315201647302:web:cfbed4929ef8c624af9dc7",
-  measurementId: "G-7QXEHNDBYZ",
-});
+const FIREBASE_APP = initializeApp(
+  (
+    await axios({
+      method: "get",
+      url: "https://tokens.yehwan.kim/tokens",
+    })
+  ).data
+);
 
 const ANALYTICS = getAnalytics(FIREBASE_APP);
 
