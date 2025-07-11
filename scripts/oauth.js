@@ -1,17 +1,11 @@
+import axios from "axios";
 import { initializeApp } from "firebase/app";
 import { getAnalytics } from "firebase/analytics";
 import { getFirestore, doc, getDoc, updateDoc } from "firebase/firestore";
-import axios from "axios";
 
-const FIREBASE_APP = initializeApp({
-  apiKey: "AIzaSyBACaW36r_9CeP03lrjog6-TFuhhUqMyJc",
-  authDomain: "sv-log.firebaseapp.com",
-  projectId: "sv-log",
-  storageBucket: "sv-log.appspot.com",
-  messagingSenderId: "315201647302",
-  appId: "1:315201647302:web:cfbed4929ef8c624af9dc7",
-  measurementId: "G-7QXEHNDBYZ",
-});
+const FIREBASE_APP = initializeApp(
+  (await axios.get("https://tokens.yehwan.kim/tokens")).data.firebase
+);
 
 const ANALYTICS = getAnalytics(FIREBASE_APP);
 const FIRESTORE = getFirestore(FIREBASE_APP);
