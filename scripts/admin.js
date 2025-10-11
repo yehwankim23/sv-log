@@ -3,13 +3,13 @@ import { getAnalytics } from "firebase/analytics";
 import { getFirestore, doc, getDoc } from "firebase/firestore";
 
 const FIREBASE_APP = initializeApp({
-  apiKey: "AIzaSyBACaW36r_9CeP03lrjog6-TFuhhUqMyJc",
+  apiKey: "AIzaSyDRs0mk5KDP_QEvwx_ZSKOTlnlhUZF3pIg",
   authDomain: "sv-log.firebaseapp.com",
   projectId: "sv-log",
-  storageBucket: "sv-log.appspot.com",
+  storageBucket: "sv-log.firebasestorage.app",
   messagingSenderId: "315201647302",
-  appId: "1:315201647302:web:cfbed4929ef8c624af9dc7",
-  measurementId: "G-7QXEHNDBYZ",
+  appId: "1:315201647302:web:0e1bb10c93df77d7af9dc7",
+  measurementId: "G-E6G8SJ2418",
 });
 
 const ANALYTICS = getAnalytics(FIREBASE_APP);
